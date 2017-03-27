@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+
+<!-- Header Stylesheets-->
+
+<head>
+  <title>Polly's Pickles</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="Stylesheet" href="css/main.css" type="text/css"/>
+  <link rel="Stylesheet" href="css/normalize.css" type="text/css"/>
+  <link rel="Stylesheet" href="css/flexbox.css" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto:400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+
+</head>
+
+<!-- Navigation Bar-->
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="order.html">Order</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Body Elements-->
+
+<body>
+  <div class="firstDiv">
+    <header class="ppHeader">
+      <h1>Polly's Pickles</h1>
+      <h2 class="subHeader">Pickle Order</h2>
+      <img></img>
+    </header>
+
+
+<p> Thank you placing an order with Polly's Pickles! Please limit your orders to 12 jars or less per order. If you have a special order request for Polly, please comment in the "Comment" section of the order form!</p>
+
+<h3>Pricing</h3>
+<ul>
+  <li> Half-Pint: $4 </li>
+  <li> Pint: $7 </li>
+  <li> Quart: $10 </li>
+</ul>
+
+<!-- Order Form -->
+
+<form>
+  <fieldset>
+    <legend>Size and Quantity</legend>
+    <input type="checkbox" class="order" name="halfpint_order" value="half pint"> Half Pint (8oz)
+    <input type="number" max="12" min="1" class="quantity" name="halfpint_quantity"/><br>
+    <input type="checkbox" class="order" name="pint_order" value="pint"> Pint (16oz)
+    <input type="number" max="12" min="1" class="quantity" name="pint_quantity"/><br>
+    <input type="checkbox" class="order" name="quart_order" value="quart"> Quart (32oz)
+    <input type="number" max="12" min="1" class="quantity" name="quart_quantity"/><br>
+    <input type="number" id="total_price" value=""/>
+  </fieldset>
+
+<script>
+var a = +$('input[name=halfpint_quantity]').val(4);
+var b = +$('input[name=pint_quantity]').val(7);
+var c = +$('input[name=quart_quantity]').val(10);
+var total = a+b+c;
+$('#total_price').val(a+b+c);
+</script>
+
+  <fieldset>
+    <legend>Custom Order or Comments</legend>
+      <input type="text" name="order" value="custom request"> <br>
+  </fieldset>
+    <input type="submit" value="Submit">
+</form>
+
+
+<p>Thank you for your support!</p>
+<img src="img/Christmas.jpg" alt="Nanny Christmas" class="Christmas aboutphoto"></img>
+
+
+</body>
+  <footer>This is a footer.</footer>
+
+<!-- JQuery Bootstrap -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="order.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.3.min.js" ></script>
+</html>
