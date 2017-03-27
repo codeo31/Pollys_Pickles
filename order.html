@@ -57,7 +57,7 @@
 
 <!-- Order Form -->
 
-<form>
+<form action="" id="pickle_form">
   <fieldset>
     <legend>Size and Quantity</legend>
     <input type="checkbox" class="order" name="halfpint_order" value="half pint"> Half Pint (8oz)
@@ -66,7 +66,22 @@
     <input type="number" max="12" min="1" class="quantity" name="pint_quantity"/><br>
     <input type="checkbox" class="order" name="quart_order" value="quart"> Quart (32oz)
     <input type="number" max="12" min="1" class="quantity" name="quart_quantity"/><br>
+
+
+
+    <p>Total Order Price:
+      <div id="getTotal"></div>
+    </p>
+
   </fieldset>
+
+  <!--<script>
+  var a = $('input[name=halfpint_quantity]').val()*4;
+  var b = $('input[name=pint_quantity]').val()*7;
+  var c = $('input[name=quart_quantity]').val()*10;
+  var total = a+b+c;
+  $('#total_price') append(total_price);
+</script>-->
 
   <fieldset>
     <legend>Custom Order or Comments</legend>
@@ -88,4 +103,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="order.js"></script>
+
+<script>var theForm=document.forms["pickle_form"]</script>
+
 </html>

@@ -10,3 +10,12 @@ $(function () {
         }
     });
 });
+
+
+function getTotal(){
+var a = $('input[name=halfpint_quantity]').val()*4;
+var b = $('input[name=pint_quantity]').val()*7;
+var c = $('input[name=quart_quantity]').val()*10;
+var total = a+b+c;
+return total;
+}
