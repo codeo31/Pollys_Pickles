@@ -10,7 +10,7 @@
   <link rel="Stylesheet" href="css/main.css" type="text/css"/>
   <link rel="Stylesheet" href="css/normalize.css" type="text/css"/>
   <link rel="Stylesheet" href="css/flexbox.css" type="text/css"/>
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto:400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Shadows+Into+Light" rel="stylesheet">
 
 </head>
 
@@ -49,7 +49,7 @@
 <p> Thank you placing an order with Polly's Pickles! Please limit your orders to 12 jars or less per order. If you have a special order request for Polly, please comment in the "Comment" section of the order form!</p>
 
 <h3>Pricing</h3>
-<ul>
+<ul class="prices">
   <li> Half-Pint: $4 </li>
   <li> Pint: $7 </li>
   <li> Quart: $10 </li>
@@ -59,7 +59,7 @@
 
 <form action="" id="pickle_form">
   <fieldset>
-    <legend>Size and Quantity</legend>
+    <legend class="legend">Size and Quantity</legend>
     <input type="checkbox" class="order" name="halfpint_order" value="half pint"> Half Pint (8oz)
     <input type="number" max="12" min="1" class="quantity" name="halfpint_quantity"/><br>
     <input type="checkbox" class="order" name="pint_order" value="pint"> Pint (16oz)
@@ -67,11 +67,6 @@
     <input type="checkbox" class="order" name="quart_order" value="quart"> Quart (32oz)
     <input type="number" max="12" min="1" class="quantity" name="quart_quantity"/><br>
 
-
-
-    <p>Total Order Price:
-      <div id="getTotal"></div>
-    </p>
 
   </fieldset>
 
@@ -84,19 +79,22 @@
 </script>-->
 
   <fieldset>
-    <legend>Custom Order or Comments</legend>
+    <legend class="legend">Custom Order or Comments</legend>
       <input type="text" name="order" value="custom request"> <br>
   </fieldset>
     <input type="submit" value="Submit">
 </form>
 
+<p>Total Order Price:
+  <div id="getTotal"></div>
+</p>
 
 <p>Thank you for your support!</p>
 <img src="img/Christmas.jpg" alt="Nanny Christmas" class="Christmas aboutphoto"></img>
 
 
 </body>
-  <footer>This is a footer.</footer>
+<footer> Copywrite ©2017 Pollys Pickles </footer>
 
 <!-- JQuery Bootstrap -->
 
