@@ -1,4 +1,5 @@
-.firstDiv {
+.firstDiv,
+AfirstDiv {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -9,4 +10,16 @@ footer {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+}
+
+
+@media (min-width : 1024px) {
+  .AfirstDiv {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 1em;
+    align-items: stretch;
+  }
+  
+
 }

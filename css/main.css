@@ -73,7 +73,7 @@ footer {
   border-radius: 50%;
   margin-left: 1em;
   margin-right: 1em;
-
+}
 
 /***Order Page Styles***/
 
@@ -87,16 +87,33 @@ footer {
 }
 
 
-/***Media Queries***/
+/* Medium Devices, Desktops */
 
-@media (min-width: 769px) {
-  .polly_intro {
+@media (min-width : 769px) {
+.polly_intro{
+  width: 70%;
+  }
+
+.pickles_intro{
+  width: 70%;
+}
+
+@media (min-width : 1024px) {
+
+  .thePickles {
+    padding-right: 800px;
+  }
+
+  .pickles_intro {
+    width: 40%;
+  }
+
+  .pickles {
     width: 50%;
-}
+  }
 
-}
-
-
-@media screen and (min-width: 1024px) {
-
+  .nanny {
+    max-width: 200px;
+    max-height: 300px;
+  }
 }
